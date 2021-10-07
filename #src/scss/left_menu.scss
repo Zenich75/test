@@ -1,0 +1,139 @@
+.menuBlock {
+  color: $sideMenuColor;
+  background-color: $sideMenuBackground;
+  font-size: $sideMenuFontSize;
+  width: 270px;
+  min-height: 100vh;
+
+  .menuTitleBlock {
+    height: 24px;
+    margin: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .siteNameSubBlock {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .siteName {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+
+      .logo {
+        width: 22px;
+      }
+    }
+  }
+
+  .menuUserBlock {
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    .menuUserSubBlock {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .avatar {
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .position {
+        font-size: 12px;
+        font-weight: normal;
+        color: #9B9B9B;
+        margin-top: 5px;
+      }
+    }
+
+    .more {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .moreCircle {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #D8D8D8;
+        margin: 0 1px;
+      }
+    }
+  }
+
+  .menuTasksBlock {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+
+    .taskItem {
+      width: 50%;
+
+      .counter {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 5px;
+      }
+
+      .description {
+        font-size: 12px;
+        line-height: 14px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .menuListBlock {
+    margin: 40px 20px 0 20px;
+
+    .title {
+      font-size: 12px;
+      color: #878787;
+      text-transform: uppercase;
+    }
+
+    .listItems {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 8px 0;
+
+        .counter {
+          display: inline-block;
+          text-align: center;
+          width: 20px;
+          height: 20px;
+          color: #131313;
+          font-size: 13px;
+          line-height: 20px;
+          background-color: #FFC200;
+          border-radius: 50%;
+          margin: -10px 0 0 5px;
+        }
+      }
+    }
+  }
+}

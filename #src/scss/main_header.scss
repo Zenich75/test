@@ -1,0 +1,131 @@
+.headerMain {
+  background-color: $mainHeaderBackground;
+  height: 106px;
+  padding: 30px 30px 0 30px;
+
+  .topLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .projectTitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .projectLogo {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        background-color: #ffc200;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .projectName {
+        font-size: 32px;
+        line-height: 38px;
+        margin-left: 15px;
+      }
+
+      .projectMore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: #EAEAEA;
+        border-radius: 50%;
+        margin-left: 10px;
+
+        .moreCircle {
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #9B9B9B;
+          margin: 0 1px;
+        }
+      }
+    }
+
+    .projectCommand {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      .avatars {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          margin: 0 5px;
+
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-left: 20px;
+
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          padding: 7px 15px;
+          margin-right: 10px;
+
+          &.share {
+            background-color: #EAEAEA;
+          }
+
+          &.chat {
+            background-color: #FFF8DD;
+            color: #FFC200;
+
+            img {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .headerMenu {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 5px;
+
+    .headerMenuItems {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        padding: 20px 0;
+        margin-right: 20px;
+
+        &.active {
+          border-bottom: 2px solid #FFC200;
+          color: $mainHeaderMenuItemSelected;
+        }
+      }
+    }
+  }
+}
